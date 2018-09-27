@@ -16,6 +16,15 @@ var icon_1 = document.getElementById("tv");
 var icon_2 = document.getElementById("alien");
 var icon_3 = document.getElementById("peace");
 
+var colors = {};
+
+colors.a = "green";
+colors.b = "blue";
+colors.c = "pink";
+colors.d = "red";
+
+console.log(colors.a);
+
 var random_icon = Math.floor(Math.random() * 2);
 //TODO: because you are flooring the random function, it will never be 2 (because Math.random() returns 0 -> 1, which you are multiplying by 2... 0.99 * 2 == 1.98... Math.floor(1.98) == 1)
 
@@ -94,6 +103,19 @@ function dragElement(element) {
     // get mouse cursor position at start
     position_3 = elem.clientX;
     position_4 = elem.clientY;
+    // change color based on new X coordinate positioning of icon.
+    if (position_3 > 400) {
+      document.body.style.backgroundColor = colors.a;
+    }
+    else if (position_3 > 200) {
+      document.body.style.backgroundColor = colors.b;
+    }
+    else if (position_3 > 100) {
+      document.body.style.backgroundColor = colors.c;
+    }
+    else {
+      document.body.style.backgroundColor = colors.d;
+    }
     document.onmouseup = closeDragElement;
     document.onmousemove = elementDrag;
   }
