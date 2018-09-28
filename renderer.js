@@ -1,9 +1,8 @@
 
-//TODO: Grade: C+
-//        - You forgot to do the whole assignment, go read the assignment again.
-//        + The part that you did works! Good job!! :-)
-//        - There were literally no comments in your code anywhere
-//        - You should always use a container to contain groups of information / object
+//TODO: New Grade: 4/5 spaghettios
+//          + good job on using a container for the colors!
+//          - icon 3 is never picked because you did the math wrong.
+//          + your git commit message was very descriptive! good job! :-)
 //
 //      NOTES:
 //        > I am using TODO: because many text editors highlight it, and add it to a list, called the "tasklist"
@@ -16,6 +15,13 @@ var icon_1 = document.getElementById("tv");
 var icon_2 = document.getElementById("alien");
 var icon_3 = document.getElementById("peace");
 
+//TODO: you can do this like this:
+//colors = {
+//  a: 'green',
+//  b: 'blue',
+//  c: 'pink',
+//  d: 'red'
+//}
 var colors = {};
 
 colors.a = "green";
